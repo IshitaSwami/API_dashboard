@@ -38,7 +38,7 @@ class Users(Resource):
 
         data = data[data['name'] != args[name]]
 
-        data.to_csv('C:/Users/ISHITA SWAMI/Desktop/users.csv',index=False)
+        data.to_csv('users.csv',index=False)
         return {'message':'Record deleted successfully.'},200
 
 api.add_resource(Users,'/users')
